@@ -13,7 +13,8 @@ tht(p, t)
 p-vector of Andrews path function at time t
 }
 \description{
-Make an Andrews path function
+Make an Andrews path function = c(1/sqrt(2), sin(t),
+cos(t), ... , sin(k*t), cos(k*t))
 }
 \examples{
 # 5-vector of Andrews path at time 4

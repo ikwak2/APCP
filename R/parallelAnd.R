@@ -8,8 +8,6 @@
 #'
 #' @param scale Do scaling the data set if scale = TRUE
 #'
-#' @param color color vector for each observations.
-#'
 #' @param ylim usuall ylim of the plot function. The limit of y axis.
 #'
 #' @param tcex The colname size. They will be texted at the plot.
@@ -46,7 +44,7 @@
 
 
 parallelAnd <-
-function(K, center=T ,scale=T,color="black", ylim,tcex=1,...)
+function(K, center=T ,scale=T, ylim,tcex=1,...)
 {
     p<-ncol(K); n<-nrow(K); k<-1;
     if(p/2 == round(p/2))
@@ -68,7 +66,7 @@ function(K, center=T ,scale=T,color="black", ylim,tcex=1,...)
     names1<-colnames(K)
     Y<-as.matrix(X)%*%t(V)/(p/2)
 
-    plotAnd(Y,ylim=ylim,color=color,...)
+    plotAnd(Y,ylim=ylim,...)
       for (i in ifelse(k==0,1,2):p)
              {
                  abline(v=t[i], lty="dotted")

@@ -4,8 +4,6 @@
 #'
 #' @param X The data set.
 #'
-#' @param color color vector for each observations.
-#'
 #' @param ... other options that can be used in plot function.
 #'
 #' @export
@@ -38,7 +36,7 @@
 
 
 plotAnd <-
-function(X,color="black",...)
+function(X, ...)
 {
     v <- 0;
     n <- nrow(X); p <- ncol(X)

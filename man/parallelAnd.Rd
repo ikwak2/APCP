@@ -2,8 +2,7 @@
 \alias{parallelAnd}
 \title{Andrews type parallel coordinate plot}
 \usage{
-parallelAnd(K, center = T, scale = T, color = "black", ylim, tcex = 1,
-  ...)
+parallelAnd(K, center = T, scale = T, ylim, tcex = 1, ...)
 }
 \arguments{
   \item{K}{The data set.}
@@ -11,8 +10,6 @@ parallelAnd(K, center = T, scale = T, color = "black", ylim, tcex = 1,
   \item{center}{Make the data centered if center = TRUE}
 
   \item{scale}{Do scaling the data set if scale = TRUE}
-
-  \item{color}{color vector for each observations.}
 
   \item{ylim}{usuall ylim of the plot function. The limit
   of y axis.}

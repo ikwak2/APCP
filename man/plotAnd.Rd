@@ -2,12 +2,10 @@
 \alias{plotAnd}
 \title{Andrews plot}
 \usage{
-plotAnd(X, color = "black", ...)
+plotAnd(X, ...)
 }
 \arguments{
   \item{X}{The data set.}
-
-  \item{color}{color vector for each observations.}
 
   \item{...}{other options that can be used in plot
   function.}

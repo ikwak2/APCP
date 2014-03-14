@@ -1,6 +1,6 @@
 #' Andrews path function
 #'
-#' Make an Andrews path function
+#' Make an Andrews path function = c(1/sqrt(2), sin(t), cos(t), ... , sin(k*t), cos(k*t))
 #'
 #' @param p The dimension.
 #'
@@ -13,6 +13,7 @@
 #' # 5-vector of Andrews path at time 4
 #' tht(5,4)
 #' @seealso \code{\link{plotAnd}}, \code{\link{parallelAnd}}
+
 
 tht <-
 function(p,t)
