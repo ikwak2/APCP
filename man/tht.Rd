@@ -1,28 +1,25 @@
 \name{tht}
 \alias{tht}
-\title{
-  Andrews path function
-}
-\description{
-  Make an Andrews path function
-}
+\title{Andrews path function}
 \usage{
 tht(p, t)
 }
 \arguments{
-  \item{p}{
-    The dimension.
-  }
-  \item{t}{
-    The time point.
-  }
+  \item{p}{The dimension.}
+
+  \item{t}{The time point.}
 }
 \value{
-  p-vector of Andrews path function at time t.
+p-vector of Andrews path function at time t
 }
-\references{
-  Kwak and Huh(2008) Andrews Plots for Extended Uses, The Korean Communications in Statistics.
+\description{
+Make an Andrews path function
 }
-\author{
-  Il-Youp Kwak
+\examples{
+# 5-vector of Andrews path at time 4
+tht(5,4)
 }
+\seealso{
+\code{\link{plotAnd}}, \code{\link{parallelAnd}}
+}
+

@@ -1,3 +1,19 @@
+#' Andrews path function
+#'
+#' Make an Andrews path function
+#'
+#' @param p The dimension.
+#'
+#' @param t The time point.
+#'
+#' @export
+#' @return p-vector of Andrews path function at time t
+#'
+#' @examples
+#' # 5-vector of Andrews path at time 4
+#' tht(5,4)
+#' @seealso \code{\link{plotAnd}}, \code{\link{parallelAnd}}
+
 tht <-
 function(p,t)
 {

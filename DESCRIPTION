@@ -1,11 +1,11 @@
 Package: APCP
 Type: Package
-Title: Draw Andrews type parallel coordinate plot
-Version: 0.3
-Date: 2011-04-30
-Author: Il-Youp Kwak
-Maintainer: <ikwak2@stat.wisc.edu>
+Title: Andrews type parallel coordinate plot(APCP)
 Description: Make an Andrews type parallel coordinate plot.
-License: GPL(>=2)
-LazyLoad: yes
+Version: 0.8
+Date: 2014-03-14
+Author: Il-Youp Kwak
+Maintainer: Il-Youp Kwak <ikwak2@stat.wisc.edu>
+License: MIT + file LICENSE
 Packaged: 2011-05-01 19:32:17 UTC; ilyoupkwak
+URL : https://github.com/ikwak2/APCP
