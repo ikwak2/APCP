@@ -1,9 +1,10 @@
-APCP : Andrews type Parallel Coordinate Plot
+R package, APCP
 =================
+IL-YOUP KWAK <ikwak2@stat.wisc.edu>, with contributions from Myung-Hoe Huh.
 
-Draw Andrews type parallel coordinate plot
+This is an R package that draws Andrews type Parallel Coordinate Plot(APCP).
 
-### install
+### installation
 with `devtools `:
 ```S
 library(devtools)
