@@ -10,6 +10,8 @@
 #'
 #' @param ylim usuall ylim of the plot function. The limit of y axis.
 #'
+#' @param color color of each individual
+#'
 #' @param tcex The colname size. They will be texted at the plot.
 #'
 #' @param ... other plotting options
@@ -29,12 +31,16 @@
 #'
 #' @seealso \code{\link{plotAnd}}, \code{\link{parallelAnd}}
 
-APCP <- function(Xrr,center=T ,scale=T, tcex=1 ,ylim,...)
+APCP <- function(Xrr,center=T ,scale=T, tcex=1 ,ylim, color, ...)
 {
     K<-Xrr$Dat
     Facnames<-Xrr$Facnames;
 
     p<-ncol(K); n<-nrow(K); k<-1;
+
+    if(missing(color))
+        color = rep("black",n)
+
     if(p/2 == round(p/2))
     {
         XX <- matrix(0,n,(p+1))
@@ -54,7 +60,7 @@ APCP <- function(Xrr,center=T ,scale=T, tcex=1 ,ylim,...)
     names1<-colnames(K)
     Y<-as.matrix(X)%*%t(V)/(p/2)
 
-    plotAnd(Y,ylim=ylim, ...)
+    plotAnd(Y,ylim=ylim, color = color, ...)
 
     for (i in ifelse(k==0,1,2):p)
     {

@@ -4,6 +4,8 @@
 #'
 #' @param X The data set.
 #'
+#' @param color color of each individual.
+#'
 #' @param ... other options that can be used in plot function.
 #'
 #' @export
@@ -36,10 +38,14 @@
 
 
 plotAnd <-
-function(X, ...)
+function(X, color, ...)
 {
     v <- 0;
     n <- nrow(X); p <- ncol(X)
+
+    if(missing(color))
+        color = rep("black",n)
+
     Andfunc <- function (t)
     {
         v <- v + as.numeric(1/sqrt(2)*X[i,1])
